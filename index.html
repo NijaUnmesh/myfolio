@@ -61,14 +61,25 @@
           height: 100%;
           object-fit: cover;
         }
+        @media (max-width: 576px) {
+        .box {
+        width: 120px;
+        height: 180px;
+        }
+        .box span {
+        transform: rotateY(calc(var(--i) * 45deg)) translate(180px);
+       }
+       }
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-black container p-4 fs-5">
   <a class="navbar-brand text-white fs-3" href="#">Myfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto ">
