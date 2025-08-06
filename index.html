@@ -70,12 +70,70 @@
         transform: rotateY(calc(var(--i) * 45deg)) translate(180px);
        }
        }
+       .color{
+        font-style: italic;
+        color: rgb(169, 231, 81);
+       }
+       .height{
+        line-height: 1.6;
+       }
+       .back{
+          background-color: rgb(165, 214, 79); 
+          border-radius: 50%;
+          padding: 55px;
 
-    </style>
+       }
+       .backimg{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyTi1SZUo0WNF8jNVHTkmnjGRgTaNB5_iUIQ&s");
+       }
+       .borimg {
+       border: 5px solid #61c65f; /* 5px thick, solid black border */
+       }
+
+      html {
+      scroll-behavior: smooth;
+      }
+     .triangle-wrapper {
+      position: relative;
+      width: 560px;
+      height: 560px;
+      margin: auto;
+     }
+     .triangle-border {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 220px solid transparent;
+      border-right: 220px solid transparent;
+      border-bottom: 370px solid #8ead47; /* Green triangle */
+      transform: rotate(-66deg);
+      z-index: 0;
+    }
+    .tilted-triangle {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+      border-bottom: 350px solid #a8ac9f; /* Green triangle */
+      transform: rotate(-66deg);
+      z-index: 1;
+    }
+     .sharp-photo {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      top: 30%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+</style>      
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-black container p-4 fs-5">
-  <a class="navbar-brand text-white fs-3" href="#">Myfolio</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black container p-2 fs-5 ">
+  <a class="navbar-brand text-white fs-3" href="#">My Portfolio</a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -87,13 +145,13 @@
         <a class="nav-link text-white ms-4" href="#">Home</a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link text-white  ms-4" href="#">Services</a>
+        <a class="nav-link text-white  ms-4" href="#about">about</a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link text-white  ms-4" href="#">Projects</a>
+        <a class="nav-link text-white  ms-4" href="#service">Skills</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link text-white  ms-4" href="#">About Me</a>
+        <a class="nav-link text-white  ms-4" href="#">Projects</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link text-white  ms-4" href="#">Blog</a>
@@ -105,7 +163,67 @@
     </form>
     </div>
   </div>
-</nav>
+    </nav>
+
+
+    <section id="home">
+      <div class="container p-5 gap-5">
+  <div class="row ">
+    <div class="col-sm-12 col-md-6 column-gap-3 my-auto container">
+      <h1 class="text-white fw-bold">Hello<span class="color">,</span>
+      </h1>
+      <h1 class="text-white fw-bold">I Am <span class="text-white">Nija Unmesh.</span></h1>
+      <h3 class="color">Mern Stack Developer</h3>
+      <p class="text-white fs-5 height">Passionate MERN stack developer building real-world projects and exploring how frontend and backend connect to create full web apps.</p>
+      <div class="d-flex justify justify-content gap-2">
+      <a href="https://www.linkedin.com/in/nija-unmesh/"><h3 class="text-white"><i class="fa-brands fa-linkedin"></i></h3></a>
+      <a href="https://github.com/NijaUnmesh"><h3 class="text-white"><i class="fa-brands fa-github"></i></h3></a>
+      <a href=""><h3 class="text-white"><i class="fa-solid fa-envelope"></i></h3></a>
+      </div>
+      <div class="pt-2 d-flex justify-content gap-3">
+        <button type="button" class="btn btn-light btn-lg">Download CV</button>
+        <button type="button" class="btn btn-light btn-lg">Hire Me</button>
+      </div>
+    </div>
+      <div class="col-sm-12 col-md-6 container">
+        <!-- <div class="cir py-5 "> -->
+        <div class="triangle-wrapper ">
+          <div class="triangle-border"></div>
+          <div class="tilted-triangle"></div>
+           <img src="./assets/meenu-removebg-preview.png" alt="" class="sharp-photo">
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+<section id="about">
+    <div><h1 class="text-white text-center"> ABOUT</h1></div>
+    <div class="container">
+      <div class="row p-5">
+        <div class="col-sm-12 col-md-6 d-flex align-items-center">
+         <div data-aos="fade-right" data-aos-duration="1500"><p class="text-white fs-5" style="line-height: 1.7;">Hello! I’m Nija Unmesh, a B.Tech Computer Science graduate with a deep passion for web development.
+
+During my college years, I worked on frontend development as part of my academic projects, which sparked my curiosity about how the frontend and backend connect.
+
+That interest led me to dive into full-stack development, especially using the MERN stack (MongoDB, Express.js, React, Node.js).
+
+I love building user-friendly interfaces and linking them with powerful backend systems. Every day, I enjoy learning, experimenting, and turning ideas into real, working web apps.
+
+I’m now focused on growing as a full-stack developer and excited to build projects that solve real problems and look great too!
+
+</p></div> 
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div data-aos="fade-left" data-aos-duration="1500"><img class="img-fluid rounded-circle w-100 h-100  mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3rQfLCe3KKo5l5XV7SqRhgtOpzUJyDWC6A&s" alt=""></div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+    <section id="service">
+<div class="text-center text-white p-5 "><h1>MY SKILLS</h1></div>
 <div class="container-fluid d-flex justify-content-center align-items-center p-5">
   <div class="box">
   <span style="--i:1;"><img src="./assets/html.png" alt=""></span>
@@ -118,5 +236,18 @@
   <span style="--i:8;"><img src="./assets/mongodb.png" alt=""></span>
   </div>
 </div>
+</section>
+
+
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
