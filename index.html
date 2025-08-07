@@ -132,34 +132,31 @@
 </style>      
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-black container p-2 fs-5 ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black container p-2 fs-5">
   <a class="navbar-brand text-white fs-3" href="#">My Portfolio</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
+<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon bg-light"></span>
 </button>
 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto ">
       <li class="nav-item active">
-        <a class="nav-link text-white ms-4" href="#">Home</a>
+        <a class="nav-link text-white ms-5" href="#">Home</a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link text-white  ms-4" href="#about">about</a>
+        <a class="nav-link text-white  ms-5" href="#about">About</a>
       </li>
       <li class="nav-item active ">
-        <a class="nav-link text-white  ms-4" href="#service">Skills</a>
+        <a class="nav-link text-white  ms-5" href="#service">Skills</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link text-white  ms-4" href="#">Projects</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link text-white  ms-4" href="#">Blog</a>
-      </li>
+        <a class="nav-link text-white  ms-5" href="#projects">Projects</a>
+      </li>3
     </ul>
     <div class="ms-auto">
     <form class="form-inline my-2 my-lg-0 ">
-      <button class="btn btn-outline-dark text-white my-2 my-sm-0 rounded-pill ms-auto fs-5" type="submit">Contact Me</button>
+      <button class="btn btn-outline-dark text-white my-2 my-sm-0 rounded-pill ms-auto fs-5"><a class="nav-link text-white" href="#contact">Contact Me</a></button>
     </form>
     </div>
   </div>
@@ -197,11 +194,11 @@
       </div>
     </section>
 
-<section id="about">
+<section id="about" class="p-4" style="background: linear-gradient(to right, #0f0f0f, #1a1a1a);">
     <div><h1 class="text-white text-center"> ABOUT</h1></div>
     <div class="container">
-      <div class="row p-5">
-        <div class="col-sm-12 col-md-6 d-flex align-items-center">
+      <div class="row p-3">
+        <div class="col-sm-12 col-md-6 d-flex align-items-center  text-align-left">
          <div data-aos="fade-right" data-aos-duration="1500"><p class="text-white fs-5" style="line-height: 1.7;">Hello! I’m Nija Unmesh, a B.Tech Computer Science graduate with a deep passion for web development.
 
 During my college years, I worked on frontend development as part of my academic projects, which sparked my curiosity about how the frontend and backend connect.
@@ -215,14 +212,14 @@ I’m now focused on growing as a full-stack developer and excited to build proj
 </p></div> 
         </div>
         <div class="col-sm-12 col-md-6">
-          <div data-aos="fade-left" data-aos-duration="1500"><img class="img-fluid rounded-circle w-100 h-100  mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3rQfLCe3KKo5l5XV7SqRhgtOpzUJyDWC6A&s" alt=""></div>
+          <div data-aos="fade-left" data-aos-duration="1500"><img class="img-fluid rounded-circle w-100 h-35  mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3rQfLCe3KKo5l5XV7SqRhgtOpzUJyDWC6A&s" alt=""></div>
         </div>
       </div>
     </div>
 </section>
 
 
-    <section id="service">
+<section id="service" class="p-5">
 <div class="text-center text-white p-5 "><h1>MY SKILLS</h1></div>
 <div class="container-fluid d-flex justify-content-center align-items-center p-5">
   <div class="box">
@@ -238,6 +235,85 @@ I’m now focused on growing as a full-stack developer and excited to build proj
 </div>
 </section>
 
+<section id="projects" class="p-5">
+  <div class="p-5"><h1 class="text-white text-center">PROJECTS</h1></div>
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+    <div class="card w-75" style="width: 18rem;">
+ <div data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/insta.png" class="card-img-top" alt="..."></div>
+  <div class="card-body">
+    <h5 class="card-title">Instagram Mini Layout</h5>
+    <p class="card-text text-primary">A simple Instagram-like layout clone using pure HTML and CSS.</p>
+  </div>
+  <div class="card-body">
+    <a href="https://nijaunmesh.github.io/instagram/" class="card-link">Live Project</a>
+    <a href="https://github.com/NijaUnmesh/instagram.git" class="card-link">GitHub Repo</a>
+  </div>
+</div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+    <div class="card w-75" style="width: 18rem;">
+  <div data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/pet.png" class="card-img-top" alt="..."></div>
+  <div class="card-body">
+    <h5 class="card-title">Translate Your Pet’s Emotions</h5>
+    <p class="card-text text-primary">A fun one-page site for a fictional pet speech translator built with HTML and CSS.</p>
+  </div>
+  <div class="card-body">
+    <a href=" https://nijaunmesh.github.io/pet/" class="card-link">Live Project</a>
+    <a href="https://github.com/NijaUnmesh/pet.git" class="card-link">GitHub Repo</a>
+  </div>
+</div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+    <div class="card w-75" style="width: 18rem;">
+  <div data-aos="zoom-in" data-aos-duration="2000"><img src="./assets/game.png" class="card-img-top" alt="..."></div>
+  <div class="card-body">
+    <h5 class="card-title">ShadowCore</h5>
+    <p class="card-text text-primary"> a futuristic warrior designed with HTML & CSS.</p>
+  </div>
+  <div class="card-body">
+    <a href="https://nijaunmesh.github.io/game/" class="card-link">Live Project</a>
+    <a href="https://github.com/NijaUnmesh/game.git" class="card-link">GitHub Repo</a>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="p-5">
+  <div><h1 class="text-white text-center p-5">CONTACT ME</h1></div>
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-sm-12 col-md-6">
+        <img class="img-fluid rounded-circle" src="https://cdn.dribbble.com/userupload/27288604/file/original-a18291e47bf9cd26ea69bc7ea3e7e58e.gif" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+       <form>
+        <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label text-white">Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label text-white">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
